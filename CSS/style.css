@@ -1,0 +1,104 @@
+ html, body {
+    margin: 0;
+  }
+/*Universal Selector*/
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: azure;
+  
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+
+/*Home page*/
+.landing-page .menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 428px) {
+    .landing-page nav {
+        display: none;
+    }
+
+    .landing-page .menu{
+        display: block;
+}
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#landing {
+    background: rgb(40, 60, 49);
+    height: 150vh;
+    color: white;
+    background-image: url("../img/landing-page/landing-image.jpg");
+    background-size: cover;
+    background-position: top left;
+}
+
+.landing-page .container {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.landing-page nav a {
+    color:white;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.landing-page .container h1 {
+    color:red;
+}
+
+#landing .prompt {
+  position: relative;
+  left: 5%;
+  top: 8%;
+}
+
+#landing .prompt h1 {
+    font-size: 3rem;
+}
+
+#landing .prompt a {
+    background: red;
+    padding: 0.5rem 2rem;
+    transition: all ease-in-out 200ms;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#landing .prompt a:hover {
+    background: rgb(147, 8, 8);
+    text-decoration: none;
+}
+
+#landing .prompt a:active {
+    background:white;
+    color:red;
+    border-style: solid;
+    border-color: red;
+}
+
+/*End of home page*/
+
+
