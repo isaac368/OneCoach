@@ -1,6 +1,10 @@
  html, body {
     margin: 0;
   }
+
+body {
+    padding-bottom: 20rem;
+}
 /*Universal Selector*/
 * {
   font-family: "Inter", sans-serif;
@@ -98,7 +102,33 @@ a:hover {
     border-style: solid;
     border-color: red;
 }
-
 /*End of home page*/
+/*Start of about us*/
+#reason {
+    background: black;
+    height: 200vh;
+    padding-top: 1rem;
+}
+.title {
+    font-size: 2rem;
+    text-align: center;
+}
+#reason .container {
+    background:red;
+    height: 100%;
+    font-size: 1rem;
+}
+.overlay-1, .overlay-3, .overlay-2 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+.overlay-2 {
+    float: right;
+}
+.overlay-1, .overlay-3 {
+    float:left;
+}
+
+
 
 
